@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Impressum — FINN</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'] } } } }
+    </script>
+    <style>
+        :root {
+            --bg: #0E0E0E;
+            --text: #FFFFFF;
+            --muted: #B5B5B5;
+            --primary: #5170ff;
+            --secondary: #6daecb;
+        }
+
+        html,
+        body {
+            background: var(--bg);
+            color: var(--text);
+        }
+
+        a {
+            color: var(--primary)
+        }
+    </style>
+</head>
+
+<body class="antialiased text-white">
+    <header class="sticky top-0 z-40 backdrop-blur border-b border-white/5 bg-black/20">
+        <div class="mx-auto max-w-4xl px-4 py-3 flex items-center justify-between">
+            <a href="./index.html" class="font-semibold tracking-wide">FINN</a>
+            <nav class="text-sm text-white/70">
+                <a href="./index.html" class="hover:text-white">Home</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="mx-auto max-w-4xl px-4 py-12">
+        <h1 class="text-3xl font-extrabold tracking-tight">Impressum</h1>
+        <p class="mt-2 text-sm text-[color:var(--muted)]">Angaben gemäß § 5 TMG</p>
+
+        <section class="mt-8 space-y-4 text-sm leading-7 text-white/90">
+            <div>
+                <div class="font-semibold">Verantwortlich für den Inhalt</div>
+                <div>Name des Künstlers / Unternehmens</div>
+                <div>Straße Hausnummer</div>
+                <div>PLZ Ort, Deutschland</div>
+            </div>
+            <div>
+                <div class="font-semibold">Kontakt</div>
+                <div>E-Mail: <a href="mailto:booking@example.com">booking@example.com</a></div>
+            </div>
+            <div>
+                <div class="font-semibold">Umsatzsteuer-ID</div>
+                <div>USt-IdNr.: DE-XXXXXXX</div>
+            </div>
+            <div class="text-xs text-[color:var(--muted)]">
+                Hinweis: Diese Seite dient als Impressum-Vorlage. Bitte die Angaben durch die tatsächlichen rechtlichen
+                Informationen ersetzen.
+            </div>
+        </section>
+
+        <div class="mt-10">
+            <a href="./index.html"
+                class="inline-flex items-center rounded-lg px-4 py-2 font-semibold text-sm text-black"
+                style="background:linear-gradient(135deg,var(--primary),var(--secondary))">Zurück zur Startseite</a>
+        </div>
+    </main>
+
+    <footer class="border-t border-white/5 mt-16">
+        <div
+            class="mx-auto max-w-4xl px-4 py-8 text-[13px] text-[color:var(--muted)] flex items-center justify-between">
+            <div>© <span id="year"></span> FINN</div>
+            <a href="./index.html#booking" class="hover:text-white">Booking</a>
+        </div>
+    </footer>
+    <script>
+        const y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FINN — Official</title>
+    <meta name="description"
+        content="Finn — official artist page. Listen on Spotify and Apple Music. For bookings, get in touch." />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS via CDN (sufficient for a small static site) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Tailwind configuration (kept minimal; colors are used via hex to avoid custom build)
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'] },
+                }
+            }
+        }
+    </script>
+    <style>
+        :root {
+            --bg: #0E0E0E;
+            --text: #FFFFFF;
+            --muted: #B5B5B5;
+            --primary: #5170ff;
+            --secondary: #6daecb;
+            /* Derived accents that auto-follow primary/secondary */
+            --glow-strong: color-mix(in srgb, var(--primary) 60%, transparent);
+            --glow-soft: color-mix(in srgb, var(--primary) 45%, transparent);
+            --halo1: color-mix(in srgb, var(--primary) 40%, transparent);
+            --halo2: color-mix(in srgb, var(--secondary) 18%, transparent);
+        }
+
+        html,
+        body {
+            background: var(--bg);
+            color: var(--text);
+            scroll-behavior: smooth;
+        }
+
+        /* Anchor offset (no sticky header now) */
+        section {
+            scroll-margin-top: 16px;
+        }
+
+        /* Reveal animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(12px);
+            transition: opacity .7s ease, transform .7s ease;
+        }
+
+        .reveal.in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Soft gradient rings behind avatar */
+        .ring-gradient {
+            background: radial-gradient(70% 70% at 50% 40%, var(--halo1), var(--halo2) 50%, rgba(14, 14, 14, 0) 70%);
+            filter: blur(20px);
+        }
+
+        /* Reusable hover shadows that follow --primary */
+        .hover-shadow-strong:hover {
+            box-shadow: 0 10px 26px -10px var(--glow-strong);
+        }
+
+        .hover-shadow-soft:hover {
+            box-shadow: 0 12px 28px -14px var(--glow-soft);
+        }
+
+        /* Header elevation on scroll */
+        header.scrolled {
+            background-color: rgba(0, 0, 0, 0.35);
+            border-color: rgba(255, 255, 255, 0.08);
+            box-shadow: 0 6px 24px -18px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Gradient text helper for hero title */
+        .text-gradient {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        /* Subtle glow utility (used on hero elements) */
+        .shadow-glow {
+            box-shadow: 0 10px 26px -10px var(--glow-strong);
+        }
+    </style>
+</head>
+
+<body class="antialiased text-white selection:bg-white/10">
+
+
+    <!-- Hero (full viewport background image, height-priority) -->
+    <section id="hero" class="relative overflow-hidden w-full min-h-[85svh] sm:min-h-screen"
+        style="background-image:url('./artist_pictures/hero.jpg'); background-size:cover; background-position:center 34%; background-repeat:no-repeat;">
+        <!-- Dark overlay for readability -->
+        <div class="absolute inset-0 bg-black/40"></div>
+        <!-- Bottom fade for smooth transition to next section -->
+        <div class="pointer-events-none absolute inset-x-0 bottom-0 h-48 sm:h-64"
+            style="background:linear-gradient(to bottom, rgba(0,0,0,0) 0%, var(--bg) 100%);"></div>
+        <div class="relative z-10 mx-auto max-w-6xl px-4">
+            <div
+                class="min-h-[90svh] sm:min-h-screen flex flex-col items-center justify-center text-center pt-31 pb-12 sm:pt-40 sm:pb-16 mt-20 translate-y-[26px] sm:translate-y-0">
+
+                <h1 class="reveal text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight sm:translate-y-0"
+                    data-reveal>
+                    <span class="text-gradient">FINN</span>
+                </h1>
+                <p id="hero-tagline" class="reveal text-lg md:text-xl text-[color:var(--muted)] mb-10 max-w-2xl mx-auto"
+                    data-reveal>
+                    Indiepop Artist aus München
+                </p>
+
+                <div class="reveal flex flex-col sm:flex-row gap-4 justify-center items-center" data-reveal>
+                    <a id="btn-listen-now" href="https://open.spotify.com/artist/7udNzJxaBhqzAsxUJzvt3T" target="_blank"
+                        rel="noopener"
+                        class="group inline-flex items-center gap-3 rounded-full px-7 py-3.5 font-semibold text-base md:text-lg text-black transition hover:translate-y-0.5 hover-shadow-strong"
+                        style="background:linear-gradient(135deg,var(--primary),var(--secondary))">
+                        <!-- Spotify logo -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168 168" aria-hidden="true"
+                            class="w-6 h-6 transition-transform group-hover:scale-110" fill="currentColor">
+                            <path
+                                d="M84 0a84 84 0 1 0 84 84A84 84 0 0 0 84 0m38.9 120.5a5.25 5.25 0 0 1-7.2 1.7c-19.7-12-44.5-14.7-73.7-8.2a5.25 5.25 0 1 1-2.2-10.3c32.4-7 60.2-3.9 82 9.4a5.26 5.26 0 0 1 1.1 7.4m10.2-22.7a6.56 6.56 0 0 1-9 2.1c-22.6-13.9-57-18-83.7-10.1a6.56 6.56 0 0 1-3.7-12.6c30.8-9.1 69-4.4 95.7 12.1a6.56 6.56 0 0 1 2.7 8.5m1-24.6c-27.1-16.1-72.1-17.6-97.9-10.1a7.87 7.87 0 0 1-4.6-15.1c29.7-9 79.1-7.2 110.9 11.6a7.87 7.87 0 0 1-8.4 13.6" />
+                        </svg>
+                        <span id="btn-listen-now-label">Listen now</span>
+                    </a>
+                    <a href="https://www.instagram.com/bisschenfinn/" target="_blank" rel="noopener"
+                        class="group inline-flex items-center gap-3 rounded-full px-7 py-3.5 font-semibold text-base md:text-lg border border-white/15 text-white hover:bg-white/5 transition hover:translate-y-0.5">
+                        <!-- Instagram icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            class="w-6 h-6 transition-transform group-hover:scale-110" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                            <line x1="17.5" y1="6.5" x2="17.5" y2="6.5" />
+                        </svg>
+                        Follow on Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music -->
+    <section id="music" class="relative py-16 sm:py-24 px-4">
+        <div class="mx-auto max-w-6xl">
+            <div class="reveal text-center mb-8 sm:mb-12" data-reveal>
+                <h2 id="music-title" class="text-4xl md:text-5xl font-extrabold mb-4">Music</h2>
+                <p id="music-subtitle" class="text-[color:var(--muted)]">Stream my latest tracks and albums on Spotify
+                </p>
+            </div>
+
+            <!-- Spotify artist embed: Popular releases -->
+            <div class="reveal relative" data-reveal>
+                <div
+                    class="w-full overflow-hidden rounded-xl md:rounded-2xl border border-white/10 bg-white/[.02] transition duration-300 hover:bg-white/[.05] hover:border-white/20 hover:-translate-y-0.5 hover-shadow-soft h-[360px] sm:h-[clamp(180px,30vw,420px)]">
+                    <iframe style="border-radius:12px" class="w-full h-full"
+                        src="https://open.spotify.com/embed/artist/7udNzJxaBhqzAsxUJzvt3T?utm_source=generator&theme=0"
+                        width="100%" height="100%" frameborder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <!-- Centered Open in Spotify button below embed -->
+            <div class="reveal mt-10 flex justify-center" data-reveal>
+                <a id="music-open-btn" href="https://open.spotify.com/artist/7udNzJxaBhqzAsxUJzvt3T" target="_blank"
+                    rel="noopener"
+                    class="group inline-flex items-center gap-3 rounded-full px-9 py-4 md:px-10 md:py-4 font-semibold text-lg md:text-xl text-black transition hover:translate-y-0.5 hover-shadow-strong"
+                    style="background:var(--primary)">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168 168" aria-hidden="true"
+                        class="w-6 h-6 transition-transform group-hover:scale-110" fill="currentColor">
+                        <path
+                            d="M84 0a84 84 0 1 0 84 84A84 84 0 0 0 84 0m38.9 120.5a5.25 5.25 0 0 1-7.2 1.7c-19.7-12-44.5-14.7-73.7-8.2a5.25 5.25 0 1 1-2.2-10.3c32.4-7 60.2-3.9 82 9.4a5.26 5.26 0 0 1 1.1 7.4m10.2-22.7a6.56 6.56 0 0 1-9 2.1c-22.6-13.9-57-18-83.7-10.1a6.56 6.56 0 0 1-3.7-12.6c30.8-9.1 69-4.4 95.7 12.1a6.56 6.56 0 0 1 2.7 8.5m1-24.6c-27.1-16.1-72.1-17.6-97.9-10.1a7.87 7.87 0 0 1-4.6-15.1c29.7-9 79.1-7.2 110.9 11.6a7.87 7.87 0 0 1-8.4 13.6" />
+                    </svg>
+                    <span id="music-open-btn-label">Open in Spotify</span>
+                </a>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Social -->
+    <section id="social" class="relative border-t border-white/5 py-16 sm:py-24 px-4">
+        <div class="mx-auto max-w-6xl">
+            <div class="reveal text-center mb-8 sm:mb-12" data-reveal>
+                <h2 id="social-title" class="text-4xl md:text-5xl font-extrabold mb-4">Follow</h2>
+                <p id="social-subtitle" class="text-[color:var(--muted)]">Connect with Finn across platforms.</p>
+            </div>
+
+            <div class="reveal mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4" data-reveal>
+                <!-- Spotify -->
+                <a href="https://open.spotify.com/intl-de/artist/7udNzJxaBhqzAsxUJzvt3T" target="_blank" rel="noopener"
+                    class="group flex items-center gap-3 rounded-lg border border-white/10 bg-white/[.02] p-4 transition duration-300 hover:bg-white/[.05] hover:border-white/20 hover:-translate-y-0.5 hover-shadow-soft">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168 168"
+                        class="h-6 w-6 transition-transform duration-300 group-hover:scale-110" fill="var(--primary)"
+                        aria-hidden="true">
+                        <path
+                            d="M84 0a84 84 0 1 0 84 84A84 84 0 0 0 84 0m38.9 120.5a5.25 5.25 0 0 1-7.2 1.7c-19.7-12-44.5-14.7-73.7-8.2a5.25 5.25 0 1 1-2.2-10.3c32.4-7 60.2-3.9 82 9.4a5.26 5.26 0 0 1 1.1 7.4m10.2-22.7a6.56 6.56 0 0 1-9 2.1c-22.6-13.9-57-18-83.7-10.1a6.56 6.56 0 0 1-3.7-12.6c30.8-9.1 69-4.4 95.7 12.1a6.56 6.56 0 0 1 2.7 8.5m1-24.6c-27.1-16.1-72.1-17.6-97.9-10.1a7.87 7.87 0 0 1-4.6-15.1c29.7-9 79.1-7.2 110.9 11.6a7.87 7.87 0 0 1-8.4 13.6" />
+                    </svg>
+                    <div>
+                        <div class="font-semibold">Spotify</div>
+                        <div id="spotify-sub" class="text-sm text-[color:var(--muted)]">Follow and stream</div>
+                    </div>
+                </a>
+
+                <!-- Apple Music -->
+                <a href="https://music.apple.com/de/artist/finn/1738901742" target="_blank" rel="noopener"
+                    class="group flex items-center gap-3 rounded-lg border border-white/10 bg-white/[.02] p-4 transition duration-300 hover:bg-white/[.05] hover:border-white/20 hover:-translate-y-0.5 hover-shadow-soft">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"
+                        class="h-6 w-6 transition-transform duration-300 group-hover:scale-110" fill="var(--primary)"
+                        aria-hidden="true">
+                        <path
+                            d="M222 162c-4.5 10.2-7.1 14.6-13.3 23.6-8.6 12.5-20.8 28.2-35.8 28.3-13.3.1-16.7-8.3-34.7-8.2-18 0-21.6 8.3-34.9 8.2-15-0.1-26.6-14.2-35.3-26.6-24.2-34.2-26.7-74.4-11.9-95.7 10.6-15.5 27.4-24.6 43.1-24.6 16.1 0 26.2 8.4 39.5 8.4 12.9 0 20.7-8.4 39.6-8.4 14.8 0 30.5 8.1 41.1 22.1-36.1 19.8-30.3 71.5 2.9 72.9z" />
+                        <path
+                            d="M164.2 44.2c7.2-8.6 12.6-20.6 10.7-32.2-10.4.7-22.8 7.5-30 16.1-6.7 7.9-12.8 20.2-10.6 31.9 11.5.9 22.8-5.8 29.9-15.8z" />
+                    </svg>
+                    <div>
+                        <div class="font-semibold">Apple Music</div>
+                        <div id="apple-sub" class="text-sm text-[color:var(--muted)]">Listen and add</div>
+                    </div>
+                </a>
+
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/bisschenfinn/" target="_blank" rel="noopener"
+                    class="group flex items-center gap-3 rounded-lg border border-white/10 bg-white/[.02] p-4 transition duration-300 hover:bg-white/[.05] hover:border-white/20 hover:-translate-y-0.5 hover-shadow-soft">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                        class="h-6 w-6 transition-transform duration-300 group-hover:scale-110" fill="var(--primary)"
+                        aria-hidden="true">
+                        <path
+                            d="M224,202.66A53.34,53.34,0,1,0,277.34,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.58-30.58C301.74,122.51,224,122.51,224,122.51s-77.74,0-94.13,8.59a54,54,0,0,0-30.58,30.58C90.71,178.9,90.71,256,90.71,256s0,77.1,8.58,94.13a54,54,0,0,0,30.58,30.58C146.26,389.49,224,389.49,224,389.49s77.74,0,94.13-8.58a54,54,0,0,0,30.58-30.58C357.29,333.1,357.29,256,357.29,256S357.29,178.9,348.71,161.66ZM224,338a82,82,0,1,1,82-82A82,82,0,0,1,224,338Zm85.33-148.42a19.2,19.2,0,1,1,19.2-19.2A19.2,19.2,0,0,1,309.33,189.58Z" />
+                    </svg>
+                    <div>
+                        <div class="font-semibold">Instagram</div>
+                        <div id="instagram-sub" class="text-sm text-[color:var(--muted)]">Follow @bisschenfinn</div>
+                    </div>
+                </a>
+
+                <!-- YouTube Music -->
+                <a href="https://music.youtube.com/channel/UCI-HaoXfA--3lHZn0RyQcHA" target="_blank" rel="noopener"
+                    class="group flex items-center gap-3 rounded-lg border border-white/10 bg-white/[.02] p-4 transition duration-300 hover:bg-white/[.05] hover:border-white/20 hover:-translate-y-0.5 hover-shadow-soft">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        class="h-6 w-6 transition-transform duration-300 group-hover:scale-110" fill="var(--primary)"
+                        aria-hidden="true">
+                        <circle cx="12" cy="12" r="10" opacity="0.15" />
+                        <path d="M10 8.5v7l6-3.5-6-3.5z" />
+                    </svg>
+                    <div>
+                        <div class="font-semibold">YouTube Music</div>
+                        <div id="youtube-sub" class="text-sm text-[color:var(--muted)]">Subscribe and listen</div>
+                    </div>
+                </a>
+
+                <!-- TikTok -->
+                <a href="https://www.tiktok.com/@bisschenfinn" target="_blank" rel="noopener"
+                    class="group flex items-center gap-3 rounded-lg border border-white/10 bg-white/[.02] p-4 transition duration-300 hover:bg-white/[.05] hover:border-white/20 hover:-translate-y-0.5 hover-shadow-soft">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
+                        class="h-6 w-6 transition-transform duration-300 group-hover:scale-110" fill="var(--primary)"
+                        aria-hidden="true">
+                        <path
+                            d="M30 8c2.2 3 4.8 5 8 5v5c-3.6 0-6.4-1.2-8-2.7V31c0 6.1-5.1 11-11.5 11S7 37.1 7 31.1C7 25 12.1 20 18.5 20c1.3 0 2.6.2 3.8.6v5.4c-1.1-.6-2.4-1-3.8-1-3.7 0-6.7 2.9-6.7 6.6s3 6.6 6.7 6.6 6.7-2.9 6.7-6.6V8h5.1z" />
+                    </svg>
+                    <div>
+                        <div class="font-semibold">TikTok</div>
+                        <div id="tiktok-sub" class="text-sm text-[color:var(--muted)]">Follow for clips</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About (inspired layout with image and glow) -->
+    <section id="about" class="relative border-t border-white/5 py-16 sm:py-24 px-4">
+        <div class="mx-auto max-w-6xl">
+            <!-- Section header with pill -->
+            <div class="reveal text-center mb-10 sm:mb-16" data-reveal>
+                <h2 id="about-title" class="text-4xl md:text-5xl font-bold">Über den Künstler</h2>
+            </div>
+
+            <!-- Two-column layout -->
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Text column -->
+                <div class="reveal space-y-6" data-reveal>
+                    <p id="about-p1" class="text-white/90 leading-relaxed">FINN ist ein aufstrebender Künstler der
+                        deutschen Indie-Pop-Szene, inspiriert von Größen wie ENNIO, Schmyt und Zartmann. Seine Songs
+                        fangen das Lebensgefühl einer jungen Generation ein, die zwischen Orientierungslosigkeit und
+                        Euphorie, zwischen rauschhaften Nächten und nachdenklicher Reflexion pendelt.</p>
+                    <p id="about-p2" class="text-white/90 leading-relaxed">Tanzbare Beats treffen auf nostalgische
+                        Indie-Gitarren, getragen von authentischen Texten – oft inspiriert von persönlichen Erfahrungen,
+                        Gedankenmustern oder Menschen aus seinem Umfeld.</p>
+
+                    <!-- Mobile-only image to break up text -->
+                    <div class="reveal block md:hidden relative" data-reveal>
+                        <div class="absolute -inset-4 rounded-2xl opacity-20 blur-2xl"
+                            style="background:linear-gradient(135deg,var(--primary),var(--secondary));"></div>
+                        <img src="./artist_pictures/hero2.jpeg" alt="Finn performing live"
+                            class="relative w-full aspect-square object-cover rounded-2xl border shadow-glow"
+                            style="object-position:center 60%; border-color: color-mix(in srgb, var(--primary) 30%, transparent);" />
+                    </div>
+
+                    <h4 id="highlights-title" class="text-xl sm:text-xl font-semibold text-start">WICHTIGE
+                        ERSCHEINUNGEN
+                    </h4>
+                    <ul class="mt-4 space-y-4 text-white/90 leading-7 text-start list-disc pl-6">
+                        <li><span id="hl-1">About you — Pangea Festival 2025</span></li>
+                        <li><span id="hl-2">Medimeisterschaften 2023 / 2024 / 2025</span></li>
+                        <li><span id="hl-3">BAYERN 3 POP Radar — Song der Woche (KW34 2025)</span></li>
+                        <li><span id="hl-4">StuStaCulum 2024</span></li>
+                        <li><span id="hl-5">Garnix Festival 2024</span></li>
+                    </ul>
+                </div>
+
+                <!-- Image column -->
+                <div class="reveal relative md:-mt-4 hidden md:block" data-reveal>
+                    <div class="absolute -inset-4 rounded-2xl opacity-20 blur-2xl"
+                        style="background:linear-gradient(135deg,var(--primary),var(--secondary));"></div>
+                    <img src="./artist_pictures/hero2.jpeg" alt="Finn performing live"
+                        class="relative w-full aspect-square object-cover rounded-2xl border shadow-glow"
+                        style="object-position:center 60%; border-color: color-mix(in srgb, var(--primary) 30%, transparent);" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Booking (styled like React example, in pure HTML/CSS) -->
+    <section id="booking" class="relative border-t border-white/5 py-16 sm:py-24 px-4">
+        <div class="mx-auto max-w-6xl">
+            <div class="max-w-2xl mx-auto">
+                <!-- Section header -->
+                <div class="reveal text-center mb-8 sm:mb-12" data-reveal>
+                    <h2 id="booking-title" class="text-4xl md:text-5xl font-bold mb-4">Get in Touch</h2>
+                    <p id="booking-subtitle" class="text-[color:var(--muted)] text-lg">
+                        Interested in booking? Send a message and let's make it happen.
+                    </p>
+                </div>
+
+                <!-- Form card -->
+                <form id="booking-form"
+                    class="reveal space-y-6 bg-white/[.02] border border-white/10 rounded-2xl p-8 hover:border-white/20 transition-all duration-300 text-left"
+                    data-reveal>
+                    <div>
+                        <label id="label-name" for="name"
+                            class="block text-sm font-medium mb-2 text-white/90">Name</label>
+                        <input id="name" name="name" type="text" placeholder="Your name" required
+                            class="w-full rounded-lg bg-white/[.03] border border-white/10 px-3 py-2 outline-none focus:border-white/20" />
+                    </div>
+                    <div>
+                        <label id="label-email" for="email"
+                            class="block text-sm font-medium mb-2 text-white/90">Email</label>
+                        <input id="email" name="email" type="email" placeholder="your.email@example.com" required
+                            class="w-full rounded-lg bg-white/[.03] border border-white/10 px-3 py-2 outline-none focus:border-white/20" />
+                    </div>
+                    <div>
+                        <label id="label-message" for="message"
+                            class="block text-sm font-medium mb-2 text-white/90">Message</label>
+                        <textarea id="message" name="message" rows="5"
+                            placeholder="Tell us about your event, venue, and preferred dates..." required
+                            class="w-full rounded-lg bg-white/[.03] border border-white/10 px-3 py-2 outline-none focus:border-white/20 resize-none"></textarea>
+                    </div>
+                    <div class="pt-2">
+                        <button id="btn-send" type="submit"
+                            class="w-full inline-flex items-center justify-center rounded-lg px-5 py-3 font-semibold text-base text-black transition hover:translate-y-0.5 hover-shadow-strong"
+                            style="background:linear-gradient(135deg,var(--primary),var(--secondary))">Send
+                            Message</button>
+                        <span id="form-status" class="block mt-2 text-sm text-[color:var(--muted)]"></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-white/5">
+        <div
+            class="mx-auto max-w-6xl px-4 py-10 text-[13px] text-[color:var(--muted)] flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>© <span id="year"></span> FINN. All rights reserved.</div>
+            <div class="flex items-center gap-3">
+                <a id="footer-top" href="#hero" class="hover:text-white transition">Back to top</a>
+                <span class="opacity-40">•</span>
+                <a href="./impressum.html" class="hover:text-white transition">Impressum</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
