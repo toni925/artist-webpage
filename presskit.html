@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FINN — Presskit | Media & Booking | Deutscher Indiepop Artist</title>
+    <meta name="description" content="FINN Presskit – Alle Infos, Zahlen, Biografie und Fotos für Medien, Booking und Veranstalter. Deutscher Indiepop Künstler aus München." />
+    <meta name="keywords" content="FINN, Presskit, Media, Booking, Indiepop Deutschland, deutscher Indie Künstler, München Musik, bisschenfinn, ENNIO, Schmyt, Zartmann, deutsche Indie-Pop-Szene, Pangea Festival, Bayern 3, neue deutsche Musik, Spotify Deutschland, Apple Music Deutschland, Pressemappe" />
+    <meta name="author" content="FINN" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="German" />
+    <meta name="geo.region" content="DE-BY" />
+    <meta name="geo.placename" content="München" />
+    <link rel="canonical" href="https://www.finn-music.de/presskit.html" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.finn-music.de/presskit.html" />
+    <meta property="og:title" content="FINN — Presskit | Media & Booking" />
+    <meta property="og:description" content="FINN Presskit – Alle Infos, Zahlen, Biografie und Fotos für Medien, Booking und Veranstalter." />
+    <meta property="og:locale" content="de_DE" />
+    <!-- JSON-LD Structured Data for Rich Results -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MusicGroup",
+        "name": "FINN",
+        "genre": ["Indiepop", "Indie", "Pop"],
+        "description": "FINN Presskit – Deutscher Indiepop Künstler aus München, inspiriert von ENNIO, Schmyt und Zartmann",
+        "url": "https://www.finn-music.de/presskit.html",
+        "image": "https://www.finn-music.de/artist_pictures/hero.jpg",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "München",
+            "addressRegion": "Bayern",
+            "addressCountry": "DE"
+        },
+        "sameAs": [
+            "https://open.spotify.com/artist/7udNzJxaBhqzAsxUJzvt3T",
+            "https://www.instagram.com/bisschenfinn/",
+            "https://music.apple.com/de/artist/finn/1738901742",
+            "https://www.tiktok.com/@bisschenfinn",
+            "https://music.youtube.com/channel/UCI-HaoXfA--3lHZn0RyQcHA"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Booking",
+            "availableLanguage": ["de", "en"]
+        }
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'] } } } }
+    </script>
+    <style>
+        :root {
+            --bg: #0A0A0A;
+            --text: #FFFFFF;
+            --muted: #9A9A9A;
+            --accent: #5170ff;
+            --accent-soft: #5170ff20;
+        }
+        html, body { background: var(--bg); color: var(--text); }
+        body::before { content: ''; position: fixed; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.03; z-index: 1000; pointer-events: none; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"); }
+        a { color: var(--accent); transition: color 0.2s; }
+        a:hover { color: var(--text); }
+        .accent-line { width: 60px; height: 3px; background: var(--accent); }
+        .btn-raw { display: inline-flex; align-items: center; gap: 12px; padding: 16px 32px; font-weight: 600; font-size: 15px; letter-spacing: 0.02em; text-transform: uppercase; border: 2px solid var(--accent); background: transparent; color: white; transition: all 0.3s ease; position: relative; overflow: hidden; }
+        .btn-raw::before { content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: var(--accent); transition: left 0.4s ease; z-index: -1; }
+        .btn-raw:hover::before { left: 0; }
+        .btn-raw:hover { transform: translateY(-2px); }
+        .gallery-img { border-left: 4px solid var(--accent); margin-bottom: 2rem; border-radius: 0; box-shadow: 0 4px 24px -8px #000a; }
+        /* Reveal animations - more subtle */
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity .6s ease, transform .6s ease;
+        }
+        .reveal.in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="antialiased text-white selection:bg-white/10">
+    <main class="mx-auto max-w-7xl px-6 sm:px-8 py-6 sm:py-10">
+        <div class="reveal flex flex-col md:flex-row items-center gap-8 mb-8" data-reveal>
+            <img src="./artist_pictures/presskit.jpg" alt="FINN artist hero" class="gallery-img w-full md:w-80 md:h-80 object-cover aspect-square mb-0" />
+            <div class="flex-1">
+                <h1 id="presskit-title" class="text-5xl md:text-6xl font-black tracking-tight mb-4">FINN — Presskit</h1>
+                <p id="presskit-subtitle" class="text-lg text-[color:var(--muted)] mb-8">Alle Infos, Zahlen, Biografie und Fotos für Medien, Booking und Veranstalter.</p>
+            </div>
+        </div>
+        <div class="reveal mb-12 flex flex-col gap-6 md:flex-row md:gap-12" data-reveal>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
+                <div class="bg-white/[.03] border-l-4 border-[color:var(--accent)] p-6 flex flex-col items-start shadow-lg h-full justify-start">
+                    <div class="flex items-center gap-3 mb-2">
+                        <!-- Music/streaming icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-[color:var(--accent)] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 18V5l12-2v13M9 18a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm12-3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/></svg>
+                        <span id="streaming-stats" class="text-lg font-bold">Streaming & Stats</span>
+                    </div>
+                    <div class="text-3xl font-extrabold text-white mb-1">40.000</div>
+                    <div id="streams-label" class="text-sm text-[color:var(--muted)] mb-2">Streams</div>
+                    <div class="text-xl font-bold text-white mb-1">8.800</div>
+                    <div id="listeners-label" class="text-sm text-[color:var(--muted)] mb-2">Hörer/Jahr</div>
+                    <div class="text-xl font-bold text-white mb-1">860</div>
+                    <div id="saves-label" class="text-sm text-[color:var(--muted)]">Saves</div>
+                </div>
+                <div class="bg-white/[.03] border-l-4 border-[color:var(--accent)] p-6 flex flex-col items-start shadow-lg h-full justify-start">
+                    <div class="flex items-center gap-3 mb-4">
+                        <!-- Released songs icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-[color:var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" /></svg>
+                        <span id="released-songs" class="text-lg font-bold">Veröffentlichte Songs</span>
+                    </div>
+                    <div class="space-y-3 w-full">
+                        <div class="bg-white/[.06] p-3 flex items-center gap-3">
+                            <img src="https://i.scdn.co/image/ab67616d00001e02e4babf5118d5da62a1890c62" alt="Kein Schlaf cover" class="w-12 h-12 rounded" />
+                            <span class="text-base font-semibold text-white">Kein Schlaf</span>
+                        </div>
+                        <div class="bg-white/[.06] p-3 flex items-center gap-3">
+                            <img src="https://i.scdn.co/image/ab67616d00001e02032023bfe88140f4f8fd65fd" alt="Marathon cover" class="w-12 h-12 rounded" />
+                            <span class="text-base font-semibold text-white">Marathon</span>
+                        </div>
+                        <div class="bg-white/[.06] p-3 flex items-center gap-3">
+                            <img src="https://i.scdn.co/image/ab67616d00001e026f09c0659786ec0b41d33eb1" alt="Blitzlicht cover" class="w-12 h-12 rounded" />
+                            <span class="text-base font-semibold text-white">Blitzlicht</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white/[.03] border-l-4 border-[color:var(--accent)] p-6 flex flex-col items-start shadow-lg h-full justify-start">
+                    <div class="flex items-center gap-3 mb-2">
+                        <!-- Calendar/star icon for important appearances -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-[color:var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                        <span id="important-appearances" class="text-lg font-bold">Wichtige Erscheinungen</span>
+                    </div>
+                    <div class="text-base font-semibold text-white mb-1">About you – Pangea Festival 2025</div>
+                    <div class="text-base font-semibold text-white mb-1">Medimeisterschaften 2023/24/25</div>
+                    <div class="text-base font-semibold text-white mb-1">BAYERN 3 POP Radar – Song der Woche (KW34 2025)</div>
+                    <div class="text-base font-semibold text-white mb-1">StuStaCulum 2024</div>
+                    <div class="text-base font-semibold text-white">Garnix Festival 2024</div>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+        <!-- Features & Releases Section -->
+        <section class="reveal mt-16" data-reveal>
+            <div class="flex items-center gap-3 mb-8">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-[color:var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 18V5l12-2v13M9 18a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm12-3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/></svg>
+                <h2 id="features-releases" class="text-3xl font-bold">Features & Releases</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white/[.03] overflow-hidden border-l-4 border-[color:var(--accent)] shadow-lg hover:bg-white/[.05] transition-colors">
+                    <img src="https://i.scdn.co/image/ab67616d00001e026f09c0659786ec0b41d33eb1" alt="Blitzlicht cover" class="w-full aspect-square object-cover" />
+                    <div class="p-5">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-xl font-bold text-white">Blitzlicht</span>
+                            <span class="text-sm text-[color:var(--muted)]">2024</span>
+                        </div>
+                        <p id="blitzlicht-desc" class="text-sm text-white/80 leading-relaxed">Die erste deutsche Single, die FINNs Stil definiert.</p>
+                        <div class="mt-3 flex items-center gap-2 text-xs text-[color:var(--accent)]">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" /></svg>
+                            <span id="debut-release">Debut Release</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white/[.03] overflow-hidden border-l-4 border-[color:var(--accent)] shadow-lg hover:bg-white/[.05] transition-colors">
+                    <img src="https://i.scdn.co/image/ab67616d00001e02032023bfe88140f4f8fd65fd" alt="Marathon cover" class="w-full aspect-square object-cover" />
+                    <div class="p-5">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-xl font-bold text-white">Marathon</span>
+                            <span class="text-sm text-[color:var(--muted)]">2024</span>
+                        </div>
+                        <p class="text-sm text-white/80 leading-relaxed">Geschrieben im Ausland – eine Single mit emotionaler Tiefe.</p>
+                        <div class="mt-3 flex items-center gap-2 text-xs text-[color:var(--accent)]">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                            <span>Feat. Kleo mit K</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white/[.03] overflow-hidden border-l-4 border-[color:var(--accent)] shadow-lg hover:bg-white/[.05] transition-colors">
+                    <img src="https://i.scdn.co/image/ab67616d00001e02e4babf5118d5da62a1890c62" alt="Kein Schlaf cover" class="w-full aspect-square object-cover" />
+                    <div class="p-5">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-xl font-bold text-white">Kein Schlaf</span>
+                            <span class="text-sm text-[color:var(--muted)]">2025</span>
+                        </div>
+                        <p class="text-sm text-white/80 leading-relaxed">Kollaboration mit TONAN & valiente – ein energiegeladener Track.</p>
+                        <div class="mt-3 flex items-center gap-2 text-xs text-[color:var(--accent)]">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+                            <span>Feat. TONAN & valiente</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Biography Section -->
+        <section class="reveal mt-16" data-reveal>
+            <div class="flex items-center gap-3 mb-8">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-[color:var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                <h2 id="biography" class="text-3xl font-bold">Biografie</h2>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="space-y-6">
+                    <div class="flex gap-4">
+                        <div class="flex flex-col items-center">
+                            <div class="w-10 h-10 rounded-full bg-[color:var(--accent)] flex items-center justify-center flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 18V5l12-2v13M9 18a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm12-3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/></svg>
+                            </div>
+                            <div class="w-0.5 h-full bg-[color:var(--accent)]/30 mt-2"></div>
+                        </div>
+                        <div class="pb-8">
+                            <h3 id="early-years" class="text-lg font-bold text-white mb-2">Frühe Jahre</h3>
+                            <p id="early-years-desc" class="text-white/80 text-sm leading-relaxed">FINN entdeckte bereits in seiner Schulzeit seine Leidenschaft für Musik. Als Gitarrist in Big Bands und Jazz-Ensembles sammelte er erste Erfahrungen, bevor Gesang und Soloauftritte in Münchner Bars wie dem Import Export und Lost Weekend in den Vordergrund rückten.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="flex flex-col items-center">
+                            <div class="w-10 h-10 rounded-full bg-[color:var(--accent)] flex items-center justify-center flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                            </div>
+                            <div class="w-0.5 h-full bg-[color:var(--accent)]/30 mt-2"></div>
+                        </div>
+                        <div class="pb-8">
+                            <h3 id="breakthrough-2024" class="text-lg font-bold text-white mb-2">2024 — Durchbruch</h3>
+                            <p id="breakthrough-2024-desc" class="text-white/80 text-sm leading-relaxed">Mit „Blitzlicht" veröffentlichte FINN seine erste eigene Musik auf Deutsch. Es folgten Auftritte bei studentischen Festivals wie dem StuStaCulum und dem Garnix Festival, die seine wachsende Präsenz in der Szene manifestierten.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="flex flex-col items-center">
+                            <div class="w-10 h-10 rounded-full bg-[color:var(--accent)] flex items-center justify-center flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+                            </div>
+                            <div class="w-0.5 h-full bg-[color:var(--accent)]/30 mt-2"></div>
+                        </div>
+                        <div class="pb-8">
+                            <h3 id="festival-2025" class="text-lg font-bold text-white mb-2">2025 — Festival Highlight</h3>
+                            <p id="festival-2025-desc" class="text-white/80 text-sm leading-relaxed">Nach der Veröffentlichung seiner beiden jüngsten Songs gipfelte FINNs Live-Historie in einem Auftritt auf dem Pangea – About You Festival 2025, einem der bedeutendsten Festival-Auftritte seiner Karriere.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="flex flex-col items-center">
+                            <div class="w-10 h-10 rounded-full bg-[color:var(--accent)] flex items-center justify-center flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 id="event-band" class="text-lg font-bold text-white mb-2">Event-Band 4attic</h3>
+                            <p id="event-band-desc" class="text-white/80 text-sm leading-relaxed">Außerhalb seiner Solokarriere sammelt FINN Bühnenerfahrung mit seiner Event-Band 4attic. Auftritte umfassen die Pasinger Vorwiesn, Firmenfeiern, private Poolpartys und das Menzinger Winzerfest.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <div class="bg-white/[.03] p-6 border-l-4 border-[color:var(--accent)] shadow-lg">
+                        <div class="flex items-center gap-2 mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[color:var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+                            <h3 class="text-xl font-bold text-white">Medimeisterschaften</h3>
+                        </div>
+                        <p class="text-white/80 text-sm leading-relaxed mb-4">Auch abseits seines Soloprojekts konnte FINN große Erfolge feiern:</p>
+                        <div class="space-y-3">
+                            <div class="flex items-start gap-3">
+                                <div class="w-2 h-2 rounded-full bg-[color:var(--accent)] mt-1.5 flex-shrink-0"></div>
+                                <div>
+                                    <p class="text-white font-semibold text-sm">Dr. Oetker</p>
+                                    <p class="text-[color:var(--muted)] text-xs">427.000 Spotify-Streams</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-2 h-2 rounded-full bg-[color:var(--accent)] mt-1.5 flex-shrink-0"></div>
+                                <div>
+                                    <p class="text-white font-semibold text-sm">BLUB</p>
+                                    <p class="text-[color:var(--muted)] text-xs">66.000 Spotify-Streams</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4 pt-4 border-t border-white/10">
+                            <p class="text-white/70 text-xs">Live vor bis zu 10.000 Festivalgästen (2023-2025)</p>
+                        </div>
+                    </div>
+                    <div class="bg-white/[.03] p-6 border-l-4 border-[color:var(--accent)] shadow-lg">
+                        <div class="flex items-center gap-2 mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[color:var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                            <h3 class="text-xl font-bold text-white">Radio Feature</h3>
+                        </div>
+                        <p class="text-white/80 text-sm leading-relaxed">BAYERN 3 POP Radar – Song der Woche (KW34 2025)</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-[color:var(--accent)]/10 to-transparent p-6 border border-[color:var(--accent)]/30 shadow-lg">
+                        <div class="flex items-center gap-2 mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[color:var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+                            <h3 class="text-xl font-bold text-white">Was kommt als Nächstes?</h3>
+                        </div>
+                        <p class="text-white/90 text-sm leading-relaxed">Neben den bereits releasten Songs bereichert FINN seine Live-Performances mit zahlreichen noch unreleasten Tracks seiner kommenden EP.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="reveal mt-16" data-reveal>
+            <h2 id="artist-photos" class="text-2xl font-bold mb-6">Artist Fotos</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <img src="./artist_pictures/hero.jpg" alt="FINN artist photo" class="gallery-img w-full object-cover aspect-square" />
+                <img src="./artist_pictures/hero2.jpeg" alt="FINN artist photo" class="gallery-img w-full object-cover aspect-square" />
+                <img src="./artist_pictures/hero3.jpg" alt="FINN artist photo" class="gallery-img w-full object-cover aspect-square" />
+                <img src="./artist_pictures/finn-live.jpg" alt="FINN artist photo" class="gallery-img w-full object-cover aspect-square" />
+                <img src="./artist_pictures/presskit.jpg" alt="FINN artist photo" class="gallery-img w-full object-cover aspect-square" />
+                <img src="./artist_pictures/finn-rolltreppe.jpg" alt="FINN artist photo" class="gallery-img w-full object-cover aspect-square" />
+            </div>
+        </div>
+        <div class="reveal mt-16" data-reveal>
+            <h2 id="social-links" class="text-2xl font-bold mb-6 text-center">Social Links</h2>
+            <div class="flex gap-3 flex-wrap justify-center">
+                <a href="https://open.spotify.com/artist/7udNzJxaBhqzAsxUJzvt3T" class="btn-raw btn-raw-filled flex items-center gap-2" title="Spotify">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168 168" class="w-5 h-5" fill="currentColor"><path d="M84 0a84 84 0 1 0 84 84A84 84 0 0 0 84 0m38.9 120.5a5.25 5.25 0 0 1-7.2 1.7c-19.7-12-44.5-14.7-73.7-8.2a5.25 5.25 0 1 1-2.2-10.3c32.4-7 60.2-3.9 82 9.4a5.26 5.26 0 0 1 1.1 7.4m10.2-22.7a6.56 6.56 0 0 1-9 2.1c-22.6-13.9-57-18-83.7-10.1a6.56 6.56 0 0 1-3.7-12.6c30.8-9.1 69-4.4 95.7 12.1a6.56 6.56 0 0 1 2.7 8.5m1-24.6c-27.1-16.1-72.1-17.6-97.9-10.1a7.87 7.87 0 0 1-4.6-15.1c29.7-9 79.1-7.2 110.9 11.6a7.87 7.87 0 0 1-8.4 13.6"/></svg>
+                    <span class="hidden sm:inline">Spotify</span>
+                </a>
+                <a href="https://music.apple.com/de/artist/finn/1738901742" class="btn-raw flex items-center gap-2" title="Apple Music">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="w-5 h-5" fill="currentColor"><path d="M222 162c-4.5 10.2-7.1 14.6-13.3 23.6-8.6 12.5-20.8 28.2-35.8 28.3-13.3.1-16.7-8.3-34.7-8.2-18 0-21.6 8.3-34.9 8.2-15-0.1-26.6-14.2-35.3-26.6-24.2-34.2-26.7-74.4-11.9-95.7 10.6-15.5 27.4-24.6 43.1-24.6 16.1 0 26.2 8.4 39.5 8.4 12.9 0 20.7-8.4 39.6-8.4 14.8 0 30.5 8.1 41.1 22.1-36.1 19.8-30.3 71.5 2.9 72.9z"/><path d="M164.2 44.2c7.2-8.6 12.6-20.6 10.7-32.2-10.4.7-22.8 7.5-30 16.1-6.7 7.9-12.8 20.2-10.6 31.9 11.5.9 22.8-5.8 29.9-15.8z"/></svg>
+                    <span class="hidden sm:inline">Apple Music</span>
+                </a>
+                <a href="https://www.instagram.com/bisschenfinn/" class="btn-raw flex items-center gap-2" title="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg>
+                    <span class="hidden sm:inline">Instagram</span>
+                </a>
+                <a href="https://music.youtube.com/channel/UCI-HaoXfA--3lHZn0RyQcHA" class="btn-raw flex items-center gap-2" title="YouTube Music">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><circle cx="12" cy="12" r="10" opacity="0.15"/><path d="M10 8.5v7l6-3.5-6-3.5z"/></svg>
+                    <span class="hidden sm:inline">YouTube Music</span>
+                </a>
+                <a href="https://www.tiktok.com/@bisschenfinn" class="btn-raw flex items-center gap-2" title="TikTok">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="w-5 h-5" fill="currentColor"><path d="M30 8c2.2 3 4.8 5 8 5v5c-3.6 0-6.4-1.2-8-2.7V31c0 6.1-5.1 11-11.5 11S7 37.1 7 31.1C7 25 12.1 20 18.5 20c1.3 0 2.6.2 3.8.6v5.4c-1.1-.6-2.4-1-3.8-1-3.7 0-6.7 2.9-6.7 6.6s3 6.6 6.7 6.6 6.7-2.9 6.7-6.6V8h5.1z"/></svg>
+                    <span class="hidden sm:inline">TikTok</span>
+                </a>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Booking CTA -->
+    <div class="reveal text-center mt-16 mb-8" data-reveal>
+        <a href="./index.html#booking" class="btn-raw btn-raw-filled inline-flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            <span id="booking-cta">Booking Anfragen</span>
+        </a>
+    </div>
+    
+    <footer class="mt-16 text-center text-sm text-[color:var(--muted)]">
+    <div class="mt-8 text-center">
+        <a href="./index.html" class="inline-flex items-center gap-2 text-white/70 hover:text-white text-sm font-semibold transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            <span id="back-to-home">Zurück zur Startseite</span>
+        </a>
+    </div>
+        <a href="./presskit.html" class="text-[color:var(--accent)] hover:underline font-semibold">Presskit für Medien & Booking</a> · <a href="./impressum.html" class="hover:underline">Impressum</a>
+    </footer>
+    <footer class="border-t border-white/5 mt-16">
+        <div class="mx-auto max-w-7xl px-6 sm:px-8 py-10 text-sm text-[color:var(--muted)] flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>© <span id="year"></span> FINN. All rights reserved.</div>
+            <a href="./index.html#booking" class="hover:text-white transition uppercase tracking-wider">Booking</a>
+        </div>
+    </footer>
+    <script>const y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();</script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

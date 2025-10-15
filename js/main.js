@@ -107,10 +107,52 @@
             openingEmail: 'Opening your email client…',
             bookingBullet1: 'Fast response, typically within 48h',
             bookingBullet2: 'Please include event date, city, and venue size',
-            footerTop: 'Back to top', 
+            footerTop: 'Back to top',
+            presskitLink: 'Media & Booking → Presskit',
+            presskitBookingText: 'For detailed press materials, visit our',
+            presskitBookingLink: 'Presskit page',
+            presskitFooter: 'Presskit',
             sending: 'Sending…',
             sentSuccess: 'Thanks! Your request was sent.',
-            sendError: 'Sorry, something went wrong. Please try again.'
+            sendError: 'Sorry, something went wrong. Please try again.',
+            // Presskit page translations
+            presskitTitle: 'FINN — Presskit',
+            presskitSubtitle: 'All info, stats, biography and photos for media, booking and event organizers.',
+            streamingStats: 'Streaming & Stats',
+            streams: 'Streams',
+            listeners: 'Listeners/Year',
+            saves: 'Saves',
+            releasedSongs: 'Released Songs',
+            importantAppearances: 'Key Appearances',
+            featuresReleases: 'Features & Releases',
+            blitzlichtDesc: 'The first German single that defines FINN\'s style.',
+            marathonDesc: 'Written abroad — a single with emotional depth.',
+            keinSchlafDesc: 'Collaboration with TONAN & valiente — an energetic track.',
+            debutRelease: 'Debut Release',
+            featArtists: 'Feat. Kleo mit K',
+            latestRelease: 'Feat. TONAN & valiente',
+            biography: 'Biography',
+            earlyYears: 'Early Years',
+            earlyYearsDesc: 'FINN discovered his passion for music during his school years. As a guitarist in big bands and jazz ensembles, he gained initial experience before vocals and solo performances in Munich bars like Import Export and Lost Weekend moved to the forefront.',
+            breakthrough2024: '2024 — Breakthrough',
+            breakthrough2024Desc: 'With "Blitzlicht," FINN released his first original music in German. This was followed by performances at student festivals like StuStaCulum and Garnix Festival, cementing his growing presence in the scene.',
+            festival2025: '2025 — Festival Highlight',
+            festival2025Desc: 'After releasing his two most recent songs, FINN\'s live history culminated in a performance at the Pangea – About You Festival 2025, one of the most significant festival appearances of his career.',
+            eventBand: 'Event Band 4attic',
+            eventBandDesc: 'Outside his solo career, FINN gains stage experience with his event band 4attic. Performances include the Pasinger Vorwiesn, corporate events, private pool parties, and the Menzinger Winzerfest.',
+            medimeisterschaften: 'Medimeisterschaften',
+            medimeisterschaftenDesc: 'Away from his solo project, FINN also celebrated major successes:',
+            drOetkerStreams: '427,000 Spotify Streams',
+            blubStreams: '66,000 Spotify Streams',
+            festivalAudience: 'Live to up to 10,000 festival-goers (2023-2025)',
+            radioFeature: 'Radio Feature',
+            radioFeatureDesc: 'BAYERN 3 POP Radar — Song of the Week (CW34 2025)',
+            whatsNext: 'What\'s Next?',
+            whatsNextDesc: 'In addition to the already released songs, FINN enriches his live performances with numerous unreleased tracks from his upcoming EP.',
+            artistPhotos: 'Artist Photos',
+            socialLinks: 'Social Links',
+            backToHome: 'Back to Home',
+            bookingCta: 'Booking Inquiries'
         },
         de: {
             navAbout: 'Über', navMusic: 'Musik', navSocial: 'Social', navBooking: 'Booking',
@@ -136,10 +178,52 @@
             openingEmail: 'E-Mail-Programm wird geöffnet…',
             bookingBullet1: 'Schnelle Antwort, in der Regel innerhalb von 48h',
             bookingBullet2: 'Bitte Datum, Stadt und Venue-Größe angeben',
-            footerTop: 'Zurück nach oben', 
+            footerTop: 'Zurück nach oben',
+            presskitLink: 'Medien & Booking → Presskit',
+            presskitBookingText: 'Für detaillierte Pressematerialien, besuche unser',
+            presskitBookingLink: 'Presskit',
+            presskitFooter: 'Presskit',
             sending: 'Senden…',
             sentSuccess: 'Danke! Deine Anfrage wurde versendet.',
-            sendError: 'Leider ist ein Fehler aufgetreten. Bitte versuche es erneut.'
+            sendError: 'Leider ist ein Fehler aufgetreten. Bitte versuche es erneut.',
+            // Presskit page translations
+            presskitTitle: 'FINN — Presskit',
+            presskitSubtitle: 'Alle Infos, Zahlen, Biografie und Fotos für Medien, Booking und Veranstalter.',
+            streamingStats: 'Streaming & Stats',
+            streams: 'Streams',
+            listeners: 'Hörer/Jahr',
+            saves: 'Saves',
+            releasedSongs: 'Veröffentlichte Songs',
+            importantAppearances: 'Wichtige Erscheinungen',
+            featuresReleases: 'Features & Releases',
+            blitzlichtDesc: 'Die erste deutsche Single, die FINNs Stil definiert.',
+            marathonDesc: 'Mit "Kleo mit K" – die neueste Single mit emotionaler Tiefe.',
+            keinSchlafDesc: 'Kollaboration mit TONAN & valiente – ein energiegeladener Track.',
+            debutRelease: 'Debut Release',
+            featArtists: 'Feat. TONAN & valiente',
+            latestRelease: 'Latest Release',
+            biography: 'Biografie',
+            earlyYears: 'Frühe Jahre',
+            earlyYearsDesc: 'FINN entdeckte bereits in seiner Schulzeit seine Leidenschaft für Musik. Als Gitarrist in Big Bands und Jazz-Ensembles sammelte er erste Erfahrungen, bevor Gesang und Soloauftritte in Münchner Bars wie dem Import Export und Lost Weekend in den Vordergrund rückten.',
+            breakthrough2024: '2024 — Durchbruch',
+            breakthrough2024Desc: 'Mit „Blitzlicht" veröffentlichte FINN seine erste eigene Musik auf Deutsch. Es folgten Auftritte bei studentischen Festivals wie dem StuStaCulum und dem Garnix Festival, die seine wachsende Präsenz in der Szene manifestierten.',
+            festival2025: '2025 — Festival Highlight',
+            festival2025Desc: 'Nach der Veröffentlichung seiner beiden jüngsten Songs gipfelte FINNs Live-Historie in einem Auftritt auf dem Pangea – About You Festival 2025, einem der bedeutendsten Festival-Auftritte seiner Karriere.',
+            eventBand: 'Event-Band 4attic',
+            eventBandDesc: 'Außerhalb seiner Solokarriere sammelt FINN Bühnenerfahrung mit seiner Event-Band 4attic. Auftritte umfassen die Pasinger Vorwiesn, Firmenfeiern, private Poolpartys und das Menzinger Winzerfest.',
+            medimeisterschaften: 'Medimeisterschaften',
+            medimeisterschaftenDesc: 'Auch abseits seines Soloprojekts konnte FINN große Erfolge feiern:',
+            drOetkerStreams: '427.000 Spotify-Streams',
+            blubStreams: '66.000 Spotify-Streams',
+            festivalAudience: 'Live vor bis zu 10.000 Festivalgästen (2023-2025)',
+            radioFeature: 'Radio Feature',
+            radioFeatureDesc: 'BAYERN 3 POP Radar – Song der Woche (KW34 2025)',
+            whatsNext: 'Was kommt als Nächstes?',
+            whatsNextDesc: 'Neben den bereits releasten Songs bereichert FINN seine Live-Performances mit zahlreichen noch unreleasten Tracks seiner kommenden EP.',
+            artistPhotos: 'Artist Fotos',
+            socialLinks: 'Social Links',
+            backToHome: 'Zurück zur Startseite',
+            bookingCta: 'Booking Anfragen'
         }
     };
 
@@ -189,6 +273,48 @@
         setText('#footer-top', t.footerTop);
         setText('#btn-listen-now-label', t.listenNow);
         setText('#btn-follow-instagram-label', t.followInstagram);
+        setText('#presskit-link-hero', t.presskitLink);
+        setText('#presskit-booking-text', t.presskitBookingText);
+        setText('#presskit-booking-link', t.presskitBookingLink);
+        setText('#presskit-footer', t.presskitFooter);
+        // Presskit page translations
+        setText('#presskit-title', t.presskitTitle);
+        setText('#presskit-subtitle', t.presskitSubtitle);
+        setText('#streaming-stats', t.streamingStats);
+        setText('#streams-label', t.streams);
+        setText('#listeners-label', t.listeners);
+        setText('#saves-label', t.saves);
+        setText('#released-songs', t.releasedSongs);
+        setText('#important-appearances', t.importantAppearances);
+        setText('#features-releases', t.featuresReleases);
+        setText('#blitzlicht-desc', t.blitzlichtDesc);
+        setText('#marathon-desc', t.marathonDesc);
+        setText('#keinschlaf-desc', t.keinSchlafDesc);
+        setText('#debut-release', t.debutRelease);
+        setText('#feat-artists', t.featArtists);
+        setText('#latest-release', t.latestRelease);
+        setText('#biography', t.biography);
+        setText('#early-years', t.earlyYears);
+        setText('#early-years-desc', t.earlyYearsDesc);
+        setText('#breakthrough-2024', t.breakthrough2024);
+        setText('#breakthrough-2024-desc', t.breakthrough2024Desc);
+        setText('#festival-2025', t.festival2025);
+        setText('#festival-2025-desc', t.festival2025Desc);
+        setText('#event-band', t.eventBand);
+        setText('#event-band-desc', t.eventBandDesc);
+        setText('#medimeisterschaften', t.medimeisterschaften);
+        setText('#medimeisterschaften-desc', t.medimeisterschaftenDesc);
+        setText('#droetker-streams', t.drOetkerStreams);
+        setText('#blub-streams', t.blubStreams);
+        setText('#festival-audience', t.festivalAudience);
+        setText('#radio-feature', t.radioFeature);
+        setText('#radio-feature-desc', t.radioFeatureDesc);
+        setText('#whats-next', t.whatsNext);
+        setText('#whats-next-desc', t.whatsNextDesc);
+        setText('#artist-photos', t.artistPhotos);
+        setText('#social-links', t.socialLinks);
+        setText('#back-to-home', t.backToHome);
+        setText('#booking-cta', t.bookingCta);
     };
 
     applyI18n();
