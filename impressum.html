@@ -13,11 +13,11 @@
     </script>
     <style>
         :root {
-            --bg: #0E0E0E;
+            --bg: #0A0A0A;
             --text: #FFFFFF;
-            --muted: #B5B5B5;
-            --primary: #5170ff;
-            --secondary: #6daecb;
+            --muted: #9A9A9A;
+            --accent: #5170ff;
+            --accent-soft: #5170ff20;
         }
 
         html,
@@ -26,63 +26,129 @@
             color: var(--text);
         }
 
+        /* Film grain texture overlay */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.03;
+            z-index: 1000;
+            pointer-events: none;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+
         a {
-            color: var(--primary)
+            color: var(--accent);
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--text);
+        }
+
+        /* Artist-style accent line */
+        .accent-line {
+            width: 60px;
+            height: 3px;
+            background: var(--accent);
+        }
+
+        /* Raw button style */
+        .btn-raw {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 32px;
+            font-weight: 600;
+            font-size: 15px;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            border: 2px solid var(--accent);
+            background: transparent;
+            color: white;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-raw::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: var(--accent);
+            transition: left 0.4s ease;
+            z-index: -1;
+        }
+
+        .btn-raw:hover::before {
+            left: 0;
+        }
+
+        .btn-raw:hover {
+            transform: translateY(-2px);
         }
     </style>
 </head>
 
-<body class="antialiased text-white">
-    <header class="sticky top-0 z-40 backdrop-blur border-b border-white/5 bg-black/20">
-        <div class="mx-auto max-w-4xl px-4 py-3 flex items-center justify-between">
-            <a href="./index.html" class="font-semibold tracking-wide">FINN</a>
-            <nav class="text-sm text-white/70">
-                <a href="./index.html" class="hover:text-white">Home</a>
-            </nav>
-        </div>
-    </header>
+<body class="antialiased text-white selection:bg-white/10">
+    <main class="mx-auto max-w-7xl px-6 sm:px-8 py-16 sm:py-24">
+        <div class="accent-line mb-6"></div>
+        <h1 class="text-5xl md:text-6xl font-black tracking-tight mb-4">Impressum</h1>
+        <p class="text-lg text-[color:var(--muted)]">Angaben gemäß § 5 TMG</p>
 
-    <main class="mx-auto max-w-4xl px-4 py-12">
-        <h1 class="text-3xl font-extrabold tracking-tight">Impressum</h1>
-        <p class="mt-2 text-sm text-[color:var(--muted)]">Angaben gemäß § 5 TMG</p>
-
-        <section class="mt-8 space-y-4 text-sm leading-7 text-white/90">
+        <section class="mt-12 space-y-8 border-l-4 border-[color:var(--accent)] pl-8 max-w-3xl">
             <div>
-                <div class="font-semibold">Verantwortlich für den Inhalt</div>
-                <div>Name des Künstlers / Unternehmens</div>
-                <div>Straße Hausnummer</div>
-                <div>PLZ Ort, Deutschland</div>
+                <div class="text-sm font-semibold uppercase tracking-wider text-white mb-2">Verantwortlich für den Inhalt</div>
+                <div class="text-white/90 leading-relaxed">
+                    <div>Name des Künstlers / Unternehmens</div>
+                    <div>Straße Hausnummer</div>
+                    <div>PLZ Ort, Deutschland</div>
+                </div>
             </div>
+            
             <div>
-                <div class="font-semibold">Kontakt</div>
-                <div>E-Mail: <a href="mailto:booking@example.com">booking@example.com</a></div>
+                <div class="text-sm font-semibold uppercase tracking-wider text-white mb-2">Kontakt</div>
+                <div class="text-white/90 leading-relaxed">
+                    E-Mail: <a href="mailto:booking@example.com">booking@example.com</a>
+                </div>
             </div>
+            
             <div>
-                <div class="font-semibold">Umsatzsteuer-ID</div>
-                <div>USt-IdNr.: DE-XXXXXXX</div>
-            </div>
-            <div class="text-xs text-[color:var(--muted)]">
-                Hinweis: Diese Seite dient als Impressum-Vorlage. Bitte die Angaben durch die tatsächlichen rechtlichen
-                Informationen ersetzen.
+                <div class="text-sm font-semibold uppercase tracking-wider text-white mb-2">Umsatzsteuer-ID</div>
+                <div class="text-white/90 leading-relaxed">
+                    USt-IdNr.: DE-XXXXXXX
+                </div>
             </div>
         </section>
 
-        <div class="mt-10">
-            <a href="./index.html"
-                class="inline-flex items-center rounded-lg px-4 py-2 font-semibold text-sm text-black"
-                style="background:linear-gradient(135deg,var(--primary),var(--secondary))">Zurück zur Startseite</a>
+        <div class="mt-12">
+            <a href="./index.html" class="btn-raw">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Zurück zur Startseite
+            </a>
         </div>
     </main>
 
-    <footer class="border-t border-white/5 mt-16">
+    <footer class="border-t border-white/5">
         <div
-            class="mx-auto max-w-4xl px-4 py-8 text-[13px] text-[color:var(--muted)] flex items-center justify-between">
-            <div>© <span id="year"></span> FINN</div>
-            <a href="./index.html#booking" class="hover:text-white">Booking</a>
+            class="mx-auto max-w-7xl px-6 sm:px-8 py-10 text-sm text-[color:var(--muted)] flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>© <span id="year"></span> FINN. All rights reserved.</div>
+            <a href="./index.html#booking" class="hover:text-white transition uppercase tracking-wider">Booking</a>
         </div>
     </footer>
+    
     <script>
-        const y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();
+        const y = document.getElementById('year'); 
+        if (y) y.textContent = new Date().getFullYear();
     </script>
 </body>
 

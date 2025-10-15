@@ -85,7 +85,7 @@
     const i18n = {
         en: {
             navAbout: 'About', navMusic: 'Music', navSocial: 'Social', navBooking: 'Booking',
-            heroTagline: 'Indiepop artist from munich',
+            heroTagline: 'Indiepop artist from munich', listenNow: 'Listen now', followInstagram: 'Follow on Instagram',
             musicTitle: 'Music', musicOpen: 'Open in Spotify', musicSubtitle: 'Stream my latest tracks and albums on Spotify',
             followTitle: 'Platforms', followSubtitle: 'Connect with Finn across platforms.',
             spotifySub: 'Follow and stream', appleSub: 'Listen and add', instagramSub: 'Follow @bisschenfinn', youtubeSub: 'Subscribe and listen', tiktokSub: 'Follow for clips',
@@ -107,14 +107,14 @@
             openingEmail: 'Opening your email client…',
             bookingBullet1: 'Fast response, typically within 48h',
             bookingBullet2: 'Please include event date, city, and venue size',
-            footerTop: 'Back to top', listenNow: 'Listen now',
+            footerTop: 'Back to top', 
             sending: 'Sending…',
             sentSuccess: 'Thanks! Your request was sent.',
             sendError: 'Sorry, something went wrong. Please try again.'
         },
         de: {
             navAbout: 'Über', navMusic: 'Musik', navSocial: 'Social', navBooking: 'Booking',
-            heroTagline: 'Indiepop Artist aus München',
+            heroTagline: 'Indiepop Artist aus München', listenNow: 'Jetzt hören', followInstagram: 'Folge auf Instagram',
             musicTitle: 'Musik', musicOpen: 'Auf Spotify öffnen', musicSubtitle: 'Höre meine neuesten Tracks und Alben auf Spotify',
             followTitle: 'Plattformen', followSubtitle: 'Folge Finn auf allen Plattformen.',
             spotifySub: 'Folgen und streamen', appleSub: 'Anhören und hinzufügen', instagramSub: 'Folge @bisschenfinn', youtubeSub: 'Abonnieren und hören', tiktokSub: 'Clips & Updates',
@@ -136,7 +136,7 @@
             openingEmail: 'E-Mail-Programm wird geöffnet…',
             bookingBullet1: 'Schnelle Antwort, in der Regel innerhalb von 48h',
             bookingBullet2: 'Bitte Datum, Stadt und Venue-Größe angeben',
-            footerTop: 'Zurück nach oben', listenNow: 'Jetzt hören',
+            footerTop: 'Zurück nach oben', 
             sending: 'Senden…',
             sentSuccess: 'Danke! Deine Anfrage wurde versendet.',
             sendError: 'Leider ist ein Fehler aufgetreten. Bitte versuche es erneut.'
@@ -188,6 +188,7 @@
         setText('#booking-bullet2', t.bookingBullet2);
         setText('#footer-top', t.footerTop);
         setText('#btn-listen-now-label', t.listenNow);
+        setText('#btn-follow-instagram-label', t.followInstagram);
     };
 
     applyI18n();
